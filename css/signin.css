@@ -18,6 +18,7 @@ body {
   padding: 15px;
   margin: auto;
 }
+
 .form-signin .checkbox {
   font-weight: 400;
 }
@@ -42,12 +43,28 @@ body {
   border-top-right-radius: 0;
 }
 
-.btn-tienda {
+.form-signin input:focus {
+
+  border:1px solid #fd7e14;
+  box-shadow: 0 0 10px #fd7e14;
+}
+
+.btn-acceder {
   background-color: #fd7e14;
   border-color: #fd7e14;
 }
 
-.btn-tienda:hover {
+.btn-acceder:hover {
+  background-color: #1D1C1B;
+  border-color: #1D1C1B;
+}
+
+.btn-registro {
+  background-color: #1D1C1B;
+  border-color: #1D1C1B;
+}
+
+.btn-registro:hover {
   background-color: #1D1C1B;
   border-color: #1D1C1B;
 }

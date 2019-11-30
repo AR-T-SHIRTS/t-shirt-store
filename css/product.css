@@ -7,24 +7,40 @@
  */
 
 .site-header {
-  background-color: rgba(0, 0, 0, .85);
+  background-color: #1D1C1B;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
 .site-header a {
-  color: #999;
+  color: white;
   transition: ease-in-out color .15s;
 }
 .site-header a:hover {
-  color: #fff;
+  color: #fd7e14;
   text-decoration: none;
+}
+
+.nav-link.dropdown-toggle:hover, 
+.nav-link.dropdown-toggle:active {
+  border-color: #1D1C1B;
+}
+
+.site-header .nav-item .dropdown-menu {
+  /* background-color: hsla(27, 98%, 54%, 0.85); */
+  background-color: #fd7e14;
+}
+
+.site-header .nav-item .dropdown-menu .dropdown-item:hover, 
+.site-header .nav-item .dropdown-menu .dropdown-item:active {
+  background-color: #1D1C1B;
+  color: white;
 }
 
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */
 
-.product-device {
+/* .product-device {
   position: absolute;
   right: 10%;
   bottom: -30%;
@@ -53,7 +69,7 @@
   bottom: 0;
   left: 5%;
   background-color: #e5e5e5;
-}
+} */
 
 
 /*
@@ -72,3 +88,5 @@
 }
 
 .overflow-hidden { overflow: hidden; }
+
+
