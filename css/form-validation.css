@@ -1,5 +1,17 @@
 .container {
-  max-width: 960px;
+    max-width: 960px;
 }
 
-.lh-condensed { line-height: 1.25; }
+.lh-condensed {
+    line-height: 1.25;
+}
+
+.btn-save {
+    background-color: #fd7e14;
+    border-color: #fd7e14;
+}
+
+.btn-save:hover {
+    background-color: #1D1C1B;
+    border-color: #1D1C1B;
+}
