@@ -12,7 +12,8 @@
     <link rel="canonical" href="https://ejemplotienda/panelusuario">
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="images/carrito.png" sizes="180x180">
@@ -30,7 +31,7 @@
             -ms-user-select: none;
             user-select: none;
         }
-        
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -45,18 +46,19 @@
     <div class="container">
         <div class="py-5 text-center">
             <img class="mb-4" src="images/carrito.png" alt="" width="72" height="72">
-            <h2>Registro</h2>
+            <h2>Regístrate y disfruta de las ventajas que te ofrecemos.</h2>
             <p class="lead">Es gratis.</p>
         </div>
 
         <div class="row">
             <div class="col-md-12 order-md-1">
-                <h4 class="mb-3">Escriba sus datos</h4>
+                <h4 class="mb-3">Todos los campos son necesarios.</h4>
                 <form class="needs-validation" novalidate>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName">Nombre</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Nombre" value="" required>
+                            <input type="text" class="form-control" id="firstName" placeholder="Nombre" value=""
+                                required>
                             <div class="invalid-feedback">
                                 Se requiere un nombre.
                             </div>
@@ -125,6 +127,7 @@
                                 <option>Ávila</option>
                                 <option>Las Palmas</option>
                                 <option>Tenerife</option>
+                                <!--Hay que cambiar los nombres-->
                             </select>
                             <div class="invalid-feedback ">
                                 Por favor, seleccione una provincia válida.
@@ -156,7 +159,8 @@
 
                     <div class="d-block my-3">
                         <div class="custom-control custom-radio">
-                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked
+                                required>
                             <label class="custom-control-label" for="credit">Tarjeta de crédito</label>
                         </div>
                         <div class="custom-control custom-radio">
@@ -166,38 +170,39 @@
                         <div class="custom-control custom-radio">
                             <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
                             <label class="custom-control-label" for="paypal">PayPal</label>
+                            <!--Deberia cambiar los demas campos, creo-->
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="cc-name">Número de tarjeta</label>
+                            <label for="cc-name">Titular de la tarjeta</label>
                             <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                            <small class="text-muted">Full name as displayed on card</small>
+                            <small class="text-muted">Nombre completo que aparece en la tarjeta</small>
                             <div class="invalid-feedback">
-                                Name on card is required
+                                El nombre del titular es necesario.
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="cc-number">Credit card number</label>
+                            <label for="cc-number">Número de tarjeta</label>
                             <input type="text" class="form-control" id="cc-number" placeholder="" required>
                             <div class="invalid-feedback ">
-                                Credit card number is required
+                                El número de la tarjeta es necesario.
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3 mb-3 ">
-                            <label for="cc-expiration">Expiration</label>
+                            <label for="cc-expiration">Fecha de caducidad.</label>
                             <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
                             <div class="invalid-feedback ">
-                                Expiration date required
+                                La fecha de caducidad es necesario.
                             </div>
                         </div>
                         <div class="col-md-3 mb-3 ">
                             <label for="cc-cvv ">CVV</label>
                             <input type="text " class="form-control" id="cc-cvv" placeholder="" required>
                             <div class="invalid-feedback ">
-                                Security code required
+                                El CVV es necesario.
                             </div>
                         </div>
                     </div>
@@ -215,11 +220,15 @@
     </ul>-->
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
+        crossorigin="anonymous "></script>
     <script>
         window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js "><\/script>')
     </script>
-    <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js " integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm " crossorigin="anonymous "></script>
+    <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm "
+        crossorigin="anonymous "></script>
     <script src="js/form-validation.js "></script>
 </body>
 
