@@ -30,12 +30,13 @@
 
 .site-header .nav-item .dropdown-menu {
     /* background-color: hsla(27, 98%, 54%, 0.85); */
-    background-color: #fd7e14;
+    background-color: #1d1c1b;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  background-color: #fd7e14 !important;
-  color: white;
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: #1d1c1b !important;
+    color: #fd7e14;
 }
 
 
@@ -45,7 +46,7 @@
 
 .site-header .nav-item .dropdown-menu .dropdown-item:hover,
 .site-header .nav-item .dropdown-menu .dropdown-item:active {
-    background-color: #1d1c1b;
+    background-color: #fd7e14;
     color: white;
 }
 
@@ -163,6 +164,6 @@
 }
 
 footer {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
 }

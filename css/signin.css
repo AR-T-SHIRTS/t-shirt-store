@@ -1,83 +1,124 @@
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #f5f5f5;
+    display: -ms-flexbox;
+    /* display: flex; */
+    -ms-flex-align: center;
+    align-items: center;
+    /* padding-top: 40px; */
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
 }
 
 .form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
+    width: 100%;
+    max-width: 330px;
+    padding: 20px;
+    margin: auto;
 }
 
 .form-signin .checkbox {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .form-signin .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  font-size: 16px;
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
 }
 
 .form-signin .form-control:focus {
-  z-index: 2;
+    z-index: 2;
 }
 
 .form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .form-signin input:focus {
-  border: 1px solid #fd7e14;
-  box-shadow: 0 0 10px #fd7e14;
+    border: 1px solid #fd7e14;
+    box-shadow: 0 0 10px #fd7e14;
 }
 
 .btn-acceder {
-  background-color: #fd7e14;
-  border-color: #fd7e14;
+    background-color: #fd7e14;
+    border-color: #fd7e14;
 }
 
 .btn-acceder:hover {
-  background-color: #1d1c1b;
-  border-color: #1d1c1b;
+    background-color: #1d1c1b;
+    border-color: #1d1c1b;
 }
 
 .btn-registro {
-  background-color: #1d1c1b;
-  border-color: #1d1c1b;
+    background-color: #1d1c1b;
+    border-color: #1d1c1b;
 }
 
 .btn-registro:hover {
-  background-color: #1d1c1b;
-  border-color: #1d1c1b;
+    background-color: #1d1c1b;
+    border-color: #1d1c1b;
 }
 
 .index-footer {
-  border-color: #1d1c1b;
-  background-color: #1d1c1b;
+    border-color: #1d1c1b;
+    background-color: #1d1c1b;
 }
 
 .myFooter {
-  background-color: #1d1c1b;
+    background-color: #1d1c1b;
+}
+
+
+/*para el header*/
+
+.site-header {
+    background-color: #1d1c1b;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+    color: white;
+    transition: ease-in-out color 0.15s;
+}
+
+.site-header a:hover {
+    color: #fd7e14;
+    text-decoration: none;
+}
+
+.nav-link.dropdown-toggle:hover,
+.nav-link.dropdown-toggle:active {
+    border-color: #1d1c1b;
+}
+
+.site-header .nav-item .dropdown-menu {
+    /* background-color: hsla(27, 98%, 54%, 0.85); */
+    background-color: #1d1c1b;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: #1d1c1b !important;
+    color: #fd7e14;
+}
+
+.site-header .nav-item .dropdown-menu .dropdown-item:hover,
+.site-header .nav-item .dropdown-menu .dropdown-item:active {
+    background-color: #fd7e14;
+    color: white;
 }
