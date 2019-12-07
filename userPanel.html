@@ -12,8 +12,7 @@
     <link rel="canonical" href="https://ejemplotienda/panelusuario">
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="images/carrito.png" sizes="180x180">
@@ -31,7 +30,7 @@
             -ms-user-select: none;
             user-select: none;
         }
-
+        
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -57,8 +56,7 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName">Nombre</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Nombre" value=""
-                                required>
+                            <input type="text" class="form-control" id="firstName" placeholder="Nombre" value="" required>
                             <div class="invalid-feedback">
                                 Se requiere un nombre.
                             </div>
@@ -77,6 +75,23 @@
                         <input type="email" class="form-control" id="email" placeholder="tu@ejemplo.com" required>
                         <div class="invalid-feedback">
                             Por favor, introduzca una dirección de correo válida.
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <label for="passwd">Contraseña</label>
+                            <input type="password" class="form-control" id="passwd" required>
+                            <div class="invalid-feedback">
+                                Por favor, introduzca una contraseña.
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="passwd">Repita la contraseña</label>
+                            <input type="password" class="form-control" id="rep_passwd" required>
+                            <div class="invalid-feedback">
+                                Por favor, introduzca una contraseña.
+                            </div>
                         </div>
                     </div>
 
@@ -159,8 +174,7 @@
 
                     <div class="d-block my-3">
                         <div class="custom-control custom-radio">
-                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked
-                                required>
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
                             <label class="custom-control-label" for="credit">Tarjeta de crédito</label>
                         </div>
                         <div class="custom-control custom-radio">
@@ -220,15 +234,11 @@
     </ul>-->
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
-        crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
     <script>
         window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js "><\/script>')
     </script>
-    <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js "
-        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm "
-        crossorigin="anonymous "></script>
+    <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js " integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm " crossorigin="anonymous "></script>
     <script src="js/form-validation.js "></script>
 </body>
 
