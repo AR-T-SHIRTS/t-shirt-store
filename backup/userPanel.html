@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Panel de Usuario</title>
+
+    <link rel="canonical" href="https://ejemplotienda/panelusuario">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="images/carrito.png" sizes="180x180">
+    <link rel="icon" href="images/carrito.png" type="image/png">
+    <link rel="icon" href="images/carrito.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/carrito.png">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/form-validation.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <ul class="site-header sticky-top py-1 nav nav-tabs">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <li class="nav-item">
+                <a class="py-2" href="#" aria-label="Product">
+                    <img id="logo" src="images/carrito.png" alt="carrito" height="40" width="40">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorías</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Hombre</a>
+                    <a class="dropdown-item" href="#">Mujer</a>
+                    <a class="dropdown-item" href="#">Niños</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="py-2 d-none d-md-inline-block" href="#">TOP Ventas</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Accesos</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="login.html">Iniciar sesión</a>
+                    <a class="dropdown-item" href="register.html">Registrarse</a>
+                </div>
+            </li>
+        </div>
+    </ul>
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="mb-4" src="images/carrito.png" alt="" width="72" height="72">
+            <h2>Regístrate y disfruta de las ventajas que te ofrecemos.</h2>
+            <p class="lead">Es gratis.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 order-md-1">
+                <h4 class="mb-3">Todos los campos son necesarios.</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Nombre</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Nombre" value="" required>
+                            <div class="invalid-feedback">
+                                Se requiere un nombre.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Apellidos</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Se requiere un apellido.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="tu@ejemplo.com" required>
+                        <div class="invalid-feedback">
+                            Por favor, introduzca una dirección de correo válida.
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <label for="passwd">Contraseña</label>
+                            <input type="password" class="form-control" id="passwd" required>
+                            <div class="invalid-feedback">
+                                Por favor, introduzca una contraseña.
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="passwd">Repita la contraseña</label>
+                            <input type="password" class="form-control" id="rep_passwd" required>
+                            <div class="invalid-feedback">
+                                Por favor, introduzca una contraseña.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 mb-3">
+                            <label for="street">Tipo de vía</label>
+                            <select class="custom-select d-block w-100 " id="street" required>
+                                <option value="">Elige...</option>
+                                <option>Calle</option>
+                                <option>Avenida</option>
+                                <option>Camino</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Por favor, introduzca el tipo de vía.
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-9 mb-3">
+                            <label for="address">Dirección</label>
+                            <input type="text" class="form-control" id="address" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Por favor, introduzca su direccion de envio.
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-4 mb-2 ">
+                            <label for="number ">Número</label>
+                            <input type="text " class="form-control " id="number " placeholder=" ">
+                        </div>
+                        <div class="col-md-1 col-sm-4 mb-2 ">
+                            <label for="floor ">Piso</label>
+                            <input type="text " class="form-control " id="floor " placeholder=" ">
+                        </div>
+                        <div class="col-md-1 col-sm-4 mb-2 ">
+                            <label for="letter ">Letra</label>
+                            <input type="text " class="form-control " id="letter " placeholder=" ">
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-md-5 col-sm-4 mb-3 ">
+                            <label for="country ">Provincia</label>
+                            <select class="custom-select d-block w-100 " id="country " required>
+                                <option value="">Elige...</option>
+                                <option>Álava</option>
+                                <option>Albacete</option>
+                                <option>Alicante</option>
+                                <option>Almería</option>
+                                <option>Asturias</option>
+                                <option>Ávila</option>
+                                <option>Las Palmas</option>
+                                <option>Tenerife</option>
+                                <!--Hay que cambiar los nombres-->
+                            </select>
+                            <div class="invalid-feedback ">
+                                Por favor, seleccione una provincia válida.
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 mb-3 ">
+                            <label for="state ">Localidad</label>
+                            <select class="custom-select d-block w-100 " id="state " required>
+                                <option value="">Elige...</option>
+                                <!-- Si se selecciona una provincia, 
+                                    deberían aparecer sus respectivas comunidades autónomas 
+                                    y eso no sé si se podría hacer fácilmente -->
+                            </select>
+                            <div class="invalid-feedback ">
+                                Por favor, seleccione una comunidad autónoma válida.
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 mb-3 ">
+                            <label for="zip ">Código Postal</label>
+                            <input type="text " class="form-control " id="zip " placeholder=" " required>
+                            <div class="invalid-feedback ">
+                                Se requiere el código postal.
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4 ">
+
+                    <h4 class="mb-3 ">Método de pago</h4>
+
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                            <label class="custom-control-label" for="credit">Tarjeta de crédito</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="debit">Tarjeta de debito</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="paypal">PayPal</label>
+                            <!--Deberia cambiar los demas campos, creo-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-name">Titular de la tarjeta</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                            <small class="text-muted">Nombre completo que aparece en la tarjeta</small>
+                            <div class="invalid-feedback">
+                                El nombre del titular es necesario.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-number">Número de tarjeta</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                            <div class="invalid-feedback ">
+                                El número de la tarjeta es necesario.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-3 ">
+                            <label for="cc-expiration">Fecha de caducidad.</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                            <div class="invalid-feedback ">
+                                La fecha de caducidad es necesario.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label for="cc-cvv ">CVV</label>
+                            <input type="text " class="form-control" id="cc-cvv" placeholder="" required>
+                            <div class="invalid-feedback ">
+                                El CVV es necesario.
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-lg btn-primary btn-save btn-block" type="submit">Guardar</button>
+                </form>
+            </div>
+        </div>
+        <footer class="my-5 pt-5 text-muted text-center text-small ">
+            <p class="mb-1 ">&copy; 2019-2020</p>
+            <!--<ul class="list-inline ">
+      <li class="list-inline-item "><a href="# ">Privacy</a></li>
+      <li class="list-inline-item "><a href="# ">Terms</a></li>
+      <li class="list-inline-item "><a href="# ">Support</a></li>
+    </ul>-->
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script>
+        window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js "><\/script>')
+    </script>
+    <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js " integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm " crossorigin="anonymous "></script>
+    <script src="js/form-validation.js "></script>
+</body>
+
+</html>
