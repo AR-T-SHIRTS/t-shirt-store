@@ -1,3 +1,7 @@
+.container {
+    max-width: 960px;
+}
+
 /* HEADER */
 .site-header {
   background-color: #1d1c1b;
@@ -35,9 +39,11 @@
   color: white;
 }
 
-
 /* FOOTER */
 footer {
   background-color: #1d1c1b;
   color: #fd7e14;
+  padding: 2px;
+  /* position: relative;
+  bottom: 0%;*/
 }

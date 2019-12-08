@@ -1,17 +1,41 @@
-.container {
-    max-width: 960px;
-}
-
 .lh-condensed {
-    line-height: 1.25;
+  line-height: 1.25;
 }
 
 .btn-save {
-    background-color: #fd7e14;
-    border-color: #fd7e14;
+  background-color: #fd7e14;
+  border-color: #fd7e14;
 }
 
 .btn-save:hover {
-    background-color: #1D1C1B;
-    border-color: #1D1C1B;
+  background-color: #1d1c1b;
+  border-color: #1d1c1b;
+}
+
+/* En orden:
+Tipo de via.
+Provincia.
+Localidad.
+Resto de campos.
+Campo mensaje en contacto
+ */
+.col-md-3.col-sm-3.mb-3 select:active,
+.col-md-3.col-sm-3.mb-3 select:focus,
+.col-md-5.col-sm-4.mb-3 select:active,
+.col-md-5.col-sm-4.mb-3 select:focus,
+.col-md-4.col-sm-4.mb-3 select:active,
+.col-md-4.col-sm-4.mb-3 select:focus,
+.col-md-12.order-md-1 input:active,
+.col-md-12.order-md-1 input:focus,
+.col-md-12.order-md-1 textarea:active,
+.col-md-12.order-md-1 textarea:focus {
+  border: 1px solid #fd7e14;
+  box-shadow: 0 0 10px #fd7e14;
+}
+
+/* Para los círculos de los métodos de pagos */
+.custom-control-input:checked ~ .custom-control-label::before {
+  border: 1px solid #fd7e14;
+  box-shadow: 0 0 10px #fd7e14;
+  background-color: #fd7e14;
 }

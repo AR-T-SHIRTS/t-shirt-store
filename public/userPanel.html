@@ -1,38 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="es-ES">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.6">
+    <meta name="description" content="Página destinada a completar los datos del usuario.">
+    <meta name="author" content="Bárbara V. García, Damián E. Domínguez, David M. Ramallo">
     <title>Panel de Usuario</title>
-
-    <link rel="canonical" href="https://ejemplotienda/panelusuario">
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="images/carrito.png" sizes="180x180">
-    <link rel="icon" href="images/carrito.png" type="image/png">
-    <link rel="icon" href="images/carrito.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="images/carrito.png">
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-
 
     <style>
         .bd-placeholder-img {
@@ -50,12 +24,36 @@
             }
         }
     </style>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="images/carrito.png" sizes="180x180">
+    <link rel="icon" href="images/carrito.png" type="image/png">
+    <link rel="icon" href="images/carrito.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/carrito.png">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
     <!-- Custom styles for this template -->
-    <link href="css/form-validation.css" rel="stylesheet">
     <link href="css/basics.css" rel="stylesheet">
+    <link href="css/form-validation.css" rel="stylesheet">
 </head>
 
-<body class="bg-light">
+<body>
     <ul class="site-header sticky-top py-1 nav nav-tabs">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
             <li class="nav-item">
@@ -103,7 +101,8 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="lastName">Apellidos</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <input type="text" class="form-control" id="lastName" placeholder="Apellidos" value=""
+                                required>
                             <div class="invalid-feedback">
                                 Se requiere un apellido.
                             </div>
@@ -121,14 +120,15 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
                             <label for="passwd">Contraseña</label>
-                            <input type="password" class="form-control" id="passwd" required>
+                            <input type="password" class="form-control" id="passwd" placeholder="Contraseña" required>
                             <div class="invalid-feedback">
                                 Por favor, introduzca una contraseña.
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <label for="passwd">Repita la contraseña</label>
-                            <input type="password" class="form-control" id="rep_passwd" required>
+                            <input type="password" class="form-control" id="rep_passwd" placeholder="Contraseña"
+                                required>
                             <div class="invalid-feedback">
                                 Por favor, introduzca una contraseña.
                             </div>
@@ -170,7 +170,7 @@
                     </div>
 
                     <div class="row ">
-                        <div class="col-md-5 col-sm-4 mb-3 ">
+                        <div class="col-md-5 col-sm-4 mb-3">
                             <label for="country ">Provincia</label>
                             <select class="custom-select d-block w-100 " id="country " required>
                                 <option value="">Elige...</option>
@@ -202,7 +202,7 @@
                         </div>
                         <div class="col-md-3 col-sm-4 mb-3 ">
                             <label for="zip ">Código Postal</label>
-                            <input type="text " class="form-control " id="zip " placeholder=" " required>
+                            <input type="text " class="form-control " id="zip " placeholder="38001" required>
                             <div class="invalid-feedback ">
                                 Se requiere el código postal.
                             </div>
@@ -220,7 +220,7 @@
                         </div>
                         <div class="custom-control custom-radio">
                             <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="debit">Tarjeta de debito</label>
+                            <label class="custom-control-label" for="debit">Tarjeta de débito</label>
                         </div>
                         <div class="custom-control custom-radio">
                             <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
@@ -239,7 +239,8 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="cc-number">Número de tarjeta</label>
-                            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                            <input type="text" class="form-control" id="cc-number" placeholder="1234 5678 9876 5432"
+                                required>
                             <div class="invalid-feedback ">
                                 El número de la tarjeta es necesario.
                             </div>
@@ -248,14 +249,14 @@
                     <div class="row">
                         <div class="col-md-3 mb-3 ">
                             <label for="cc-expiration">Fecha de caducidad</label>
-                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="05/23" required>
                             <div class="invalid-feedback ">
                                 La fecha de caducidad es necesario.
                             </div>
                         </div>
                         <div class="col-md-3 mb-3 ">
                             <label for="cc-cvv ">CVV</label>
-                            <input type="text " class="form-control" id="cc-cvv" placeholder="" required>
+                            <input type="text " class="form-control" id="cc-cvv" placeholder="000" required>
                             <div class="invalid-feedback ">
                                 El CVV es necesario.
                             </div>
@@ -299,16 +300,16 @@
         <div class="col-md-3">
             <h5>Contacto</h5>
             <ul class="list-unstyled text-small">
-                <li><a class="text-white" href="#">Contacto</a></li>
-                <li><a class="text-white" href="#">Devoluciones</a></li>
+                <li><a class="text-white" href="contacto.html">Contacto</a></li>
+                <li><a class="text-white" href="devoluciones.html">Devoluciones</a></li>
             </ul>
         </div>
         <div class="col-md-3">
             <h5>Quiénes somos</h5>
             <ul class="list-unstyled text-small">
-                <li><a class="text-white" href="#">Equipo</a></li>
-                <li><a class="text-white" href="#">Privacidad</a></li>
-                <li><a class="text-white" href="#">Condiciones de compra</a></li>
+                <li><a class="text-white" href="equipo.html">Equipo</a></li>
+                <li><a class="text-white" href="privacidad.html">Privacidad</a></li>
+                <li><a class="text-white" href="condicionesCompra.html">Condiciones de compra</a></li>
             </ul>
         </div>
     </div>
