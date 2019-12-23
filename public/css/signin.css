@@ -55,17 +55,22 @@ body {
 }
 
 .btn-acceder {
+  color: white;
   background-color: #fd7e14;
   border-color: #fd7e14;
 }
 
 .btn-registro {
+  color: white;
   background-color: #1d1c1b;
   border-color: #1d1c1b;
 }
 
 .btn-acceder:hover,
-.btn-registro:hover {
+.btn-registro:hover,
+.btn-acceder:active,
+.btn-registro:active {
+  color: white;
   background-color: #1d1c1b;
   border-color: #1d1c1b;
 }

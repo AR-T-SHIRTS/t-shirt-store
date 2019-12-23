@@ -3,11 +3,13 @@
 }
 
 .btn-save {
+  color: white;
   background-color: #fd7e14;
   border-color: #fd7e14;
 }
 
 .btn-save:hover {
+  color: white;
   background-color: #1d1c1b;
   border-color: #1d1c1b;
 }

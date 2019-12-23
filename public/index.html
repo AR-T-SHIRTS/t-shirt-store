@@ -2,196 +2,196 @@
 <html lang="es-ES">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Página principal de compra de camisetas con etiqueta AR.">
-  <title>Tienda AR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Página principal de compra de camisetas con etiqueta AR.">
+    <title>Tienda AR</title>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/7.5.2/firebase-app.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.5.2/firebase-app.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="/__/firebase/7.5.2/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.5.2/firebase-analytics.js"></script>
 
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
-  <script src="/__/firebase/6.1.1/firebase-firestore.js"></script>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <script src="/__/firebase/6.1.1/firebase-firestore.js"></script>
 
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
 
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" <!-- Favicons
-    -->
-  <link rel="apple-touch-icon" href="../images/carrito.png" sizes="180x180">
-  <link rel="icon" href="images/carrito.png" type="image/png">
-  <link rel="icon" href="images/carrito.png" sizes="16x16" type="image/png">
-  <link rel="icon" href="images/carrito.png">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" <!-- Favicons
+        -->
+    <link rel="apple-touch-icon" href="../images/carrito.png" sizes="180x180">
+    <link rel="icon" href="images/carrito.png" type="image/png">
+    <link rel="icon" href="images/carrito.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/carrito.png">
 
 
-  <!-- Custom styles -->
-  <link href="css/product.css" rel="stylesheet">
-  <link href="css/basics.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="css/product.css" rel="stylesheet">
+    <link href="css/basics.css" rel="stylesheet">
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <ul class="site-header sticky-top py-1 nav nav-tabs">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <li class="nav-item">
-        <a class="py-2" href="index.html" aria-label="Product">
-          <img id="logo" src="images/carrito.png" alt="carrito" height="40" width="40">
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false">Categorías</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Hombre</a>
-          <a class="dropdown-item" href="#">Mujer</a>
-          <a class="dropdown-item" href="#">Niños</a>
+    <ul class="site-header sticky-top py-1 nav nav-tabs">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <li class="nav-item">
+                <a class="py-2" href="index.html" aria-label="Product">
+                    <img id="logo" src="images/carrito.png" alt="carrito" height="40" width="40">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">Categorías</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Hombre</a>
+                    <a class="dropdown-item" href="#">Mujer</a>
+                    <a class="dropdown-item" href="#">Niños</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="py-2 d-none d-md-inline-block" href="#">TOP Ventas</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">Accesos</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="login.html">Iniciar sesión</a>
+                    <a class="dropdown-item" href="register.html">Registrarse</a>
+                </div>
+            </li>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="py-2 d-none d-md-inline-block" href="#">TOP Ventas</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false">Accesos</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="login.html">Iniciar sesión</a>
-          <a class="dropdown-item" href="register.html">Registrarse</a>
+    </ul>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="zoom text-principal display-4 font-weight-normal">AR T-shirts</h1>
+            <p class="text-descripcion lead font-weight-normal">Describir que las camisas tienen diseños de R.A. </p>
+            <!-- <a class="btn btn-outline-secondary" href="#">Coming soon</a> -->
         </div>
-      </li>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </div>
-  </ul>
 
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="zoom text-principal display-4 font-weight-normal">AR T-shirts</h1>
-      <p class="text-descripcion lead font-weight-normal">Describir que las camisas tienen diseños de R.A. </p>
-      <!-- <a class="btn btn-outline-secondary" href="#">Coming soon</a> -->
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="zoomprod bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Nombre Camiseta</h2>
+                <p class="lead">Breve descripción del dibujo de R.A. que hay en la camiseta</p>
+            </div>
+            <img class="bg-light shadow-sm mx-auto" src="images/ejcamisa.jpg" width="80%" height="300px">
+            </img>
+        </div>
+        <div class="zoomprod bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">Another headline</h2>
+                <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            </div>
+        </div>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-  </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="zoomprod bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Nombre Camiseta</h2>
-        <p class="lead">Breve descripción del dibujo de R.A. que hay en la camiseta</p>
-      </div>
-      <img class="bg-light shadow-sm mx-auto" src="images/ejcamisa.jpg" width="80%" height="300px">
-      </img>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="zoomprod bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">Another headline</h2>
+                <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            </div>
+        </div>
+        <div class="zoomprod bg-secondary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Another headline</h2>
+                <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            </div>
+        </div>
     </div>
-    <div class="zoomprod bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-      </div>
-    </div>
-  </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="zoomprod bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-      </div>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="zoomprod bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">Another headline</h2>
+                <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            </div>
+        </div>
+        <div class="zoomprod bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Another headline</h2>
+                <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            </div>
+        </div>
     </div>
-    <div class="zoomprod bg-secondary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-      </div>
-    </div>
-  </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="zoomprod bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-      </div>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="zoomprod bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">Another headline</h2>
+                <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            </div>
+        </div>
+        <div class="zoomprod bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Another headline</h2>
+                <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            </div>
+        </div>
     </div>
-    <div class="zoomprod bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-      </div>
-    </div>
-  </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="zoomprod bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-      </div>
-    </div>
-    <div class="zoomprod bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-      </div>
-    </div>
-  </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+        crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script>
-    window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')
-  </script>
-  <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-    crossorigin="anonymous"></script>
-
-  <!-- <script>
+    <!-- <script>
       document.addEventListener('DOMContentLoaded', function() {
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
         // // The Firebase SDK is initialized and available here!
@@ -216,38 +216,38 @@
 </body>
 
 <footer class="py-4">
-  <div class="row">
-    <div class="col-md-1">
+    <div class="row mr-4">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-2">
+            <img id="logo" src="images/carrito.png" alt="carrito" height="30" width="30">
+            <small class="d-block mb-3 text-white">&copy; 2019-2020</small>
+        </div>
+        <div class="col-md-3">
+            <h5>Categorías</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-white" href="#">Hombre</a></li>
+                <li><a class="text-white" href="#">Mujer</a></li>
+                <li><a class="text-white" href="#">Niños</a></li>
+                <li><a class="text-white" href="#">TOP Ventas</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h5>Contacto</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-white" href="contacto.html">Contacto</a></li>
+                <li><a class="text-white" href="devoluciones.html">Devoluciones</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h5>Quiénes somos</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-white" href="equipo.html">Equipo</a></li>
+                <li><a class="text-white" href="privacidad.html">Privacidad</a></li>
+                <li><a class="text-white" href="condicionesCompra.html">Condiciones de compra</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="col-md-2">
-      <img id="logo" src="images/carrito.png" alt="carrito" height="30" width="30">
-      <small class="d-block mb-3 text-white">&copy; 2019-2020</small>
-    </div>
-    <div class="col-md-3">
-      <h5>Categorías</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-white" href="#">Hombre</a></li>
-        <li><a class="text-white" href="#">Mujer</a></li>
-        <li><a class="text-white" href="#">Niños</a></li>
-        <li><a class="text-white" href="#">TOP Ventas</a></li>
-      </ul>
-    </div>
-    <div class="col-md-3">
-      <h5>Contacto</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-white" href="contacto.html">Contacto</a></li>
-        <li><a class="text-white" href="devoluciones.html">Devoluciones</a></li>
-      </ul>
-    </div>
-    <div class="col-md-3">
-      <h5>Quiénes somos</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-white" href="equipo.html">Equipo</a></li>
-        <li><a class="text-white" href="privacidad.html">Privacidad</a></li>
-        <li><a class="text-white" href="condicionesCompra.html">Condiciones de compra</a></li>
-      </ul>
-    </div>
-  </div>
 </footer>
 
 </html>

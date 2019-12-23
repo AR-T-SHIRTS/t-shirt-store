@@ -1,5 +1,12 @@
 .container {
-    max-width: 960px;
+  max-width: 960px;
+}
+
+.cn {
+  min-height: 100%;
+  height: auto !important;
+  height: 80%;
+  margin: 0 auto -8em;
 }
 
 /* HEADER */
@@ -44,6 +51,7 @@ footer {
   background-color: #1d1c1b;
   color: #fd7e14;
   padding: 2px;
+  /* width: 99%; */
   /* position: relative;
   bottom: 0%;*/
 }
