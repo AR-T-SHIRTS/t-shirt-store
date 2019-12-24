@@ -9,6 +9,24 @@
     <meta name="author" content="Bárbara V. García, Damián E. Domínguez, David M. Ramallo">
     <title>Registro</title>
 
+
+    <!-- FIREBASE -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script> -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script> -->
+    <!-- <script src="/__/firebase/7.5.2/firebase-analytics.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script> -->
+
+    <!-- Initialize Firebase -->
+    <!-- <script src="/__/firebase/init.js"></script> -->
+
+    <!-- /FIREBASE -->
+
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="images/carrito.png" sizes="180x180">
     <link rel="icon" href="images/carrito.png" type="image/png">
@@ -72,11 +90,31 @@
             <!--<label class="sr-only">Repetir contraseña</label>
             <input type="password"class="form-control" placeholder="Repetir Contraseña" required>-->
 
-            <button class="btn btn-lg btn-registro btn-block" type="submit">Registrarse</button>
+            <button id="btnSignUp" class="btn btn-lg btn-registro btn-block" type="submit">Registrarse</button>
             <br>
             <p>¿Ya tienes una cuenta? <a id="noregistro" href="login.html">Inicia sesión</a></p>
         </form>
     </div>
+
+    <!-- FIREBASE -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <!-- <script src="/__/firebase/7.5.2/firebase-analytics.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+    <!-- Initialize Firebase -->
+    <!-- <script src="/__/firebase/init.js"></script> -->
+
+    <!-- /FIREBASE -->
+
+    <script src="js/bbdd.js"></script>
+
 </body>
 
 <footer class="py-4">

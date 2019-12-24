@@ -7,16 +7,22 @@
     <meta name="description" content="Página principal de compra de camisetas con etiqueta AR.">
     <title>Tienda AR</title>
 
+    <!-- FIREBASE -->
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.5.2/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script> -->
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.5.2/firebase-analytics.js"></script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script> --> -->
+    <!-- <script src="/__/firebase/7.5.2/firebase-analytics.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script> -->
 
     <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-    <script src="/__/firebase/6.1.1/firebase-firestore.js"></script>
+    <!-- <script src="/__/firebase/init.js"></script> -->
+
+    <!-- /FIREBASE -->
 
     <style>
         .bd-placeholder-img {
@@ -191,6 +197,41 @@
         integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
         crossorigin="anonymous"></script>
 
+
+    <!-- FIREBASE -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <!-- <script src="/__/firebase/7.5.2/firebase-analytics.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+    <!-- Initialize Firebase -->
+    <!-- <script src="/__/firebase/init.js"></script> -->
+
+    <!-- /FIREBASE -->
+
+    <script>
+        //Inicializar Firebase
+        var firebaseConfig = {
+            apiKey: "AIzaSyADN2WrTeyMRGzNfZX5RjCZTuwaaGAoWd8",
+            authDomain: "ar-store-9b1bd.firebaseapp.com",
+            databaseURL: "https://ar-store-9b1bd.firebaseio.com",
+            projectId: "ar-store-9b1bd",
+            storageBucket: "ar-store-9b1bd.appspot.com",
+            messagingSenderId: "164551784368",
+            appId: "1:164551784368:web:4d93fa972aaf3d1bd54875",
+            measurementId: "G-3LR9106SGK"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="js/bbdd.js"></script>
     <!-- <script>
       document.addEventListener('DOMContentLoaded', function() {
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
