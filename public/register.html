@@ -80,24 +80,26 @@
                 <li class="nav-item"></li>
             </div>
         </ul>
-        <form class="text-center my-5 form-signin">
+        <div class="text-center my-5 form-signin">
             <img class="mb-4" src="images/carrito.png" alt="" width="72" height="72">
             <h1 class="h3 mb-3 font-weight-normal">Crea tu cuenta</h1>
             <label for="inputEmail" class="sr-only">Email</label>
-            <p><input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus></p>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
             <label for="inputPassword" class="sr-only">Contraseña</label>
-            <p><input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required></p>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
             <!--<label class="sr-only">Repetir contraseña</label>
             <input type="password"class="form-control" placeholder="Repetir Contraseña" required>-->
 
-            <button id="btnSignUp" class="btn btn-lg btn-registro btn-block" type="submit">Registrarse</button>
+            <button onclick="register()" id="btnSignUp" class="btn btn-lg btn-registro btn-block"
+                type="submit">Registrarse</button>
             <br>
             <p>¿Ya tienes una cuenta? <a id="noregistro" href="login.html">Inicia sesión</a></p>
-        </form>
+        </div>
     </div>
 
     <!-- FIREBASE -->
 
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
 
@@ -109,11 +111,26 @@
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
 
     <!-- Initialize Firebase -->
+    <script>
+        //Inicializar Firebase
+        var firebaseConfig = {
+            apiKey: "AIzaSyADN2WrTeyMRGzNfZX5RjCZTuwaaGAoWd8",
+            authDomain: "ar-store-9b1bd.firebaseapp.com",
+            databaseURL: "https://ar-store-9b1bd.firebaseio.com",
+            projectId: "ar-store-9b1bd",
+            storageBucket: "ar-store-9b1bd.appspot.com",
+            messagingSenderId: "164551784368",
+            appId: "1:164551784368:web:4d93fa972aaf3d1bd54875",
+            measurementId: "G-3LR9106SGK"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
     <!-- <script src="/__/firebase/init.js"></script> -->
 
+    <script src="js/login_and_register.js"></script>
     <!-- /FIREBASE -->
 
-    <script src="js/bbdd.js"></script>
 
 </body>
 
