@@ -16,12 +16,14 @@
   backdrop-filter: saturate(180%) blur(20px);
 }
 
-.site-header a {
+.site-header a,
+.site-header button {
   color: white;
   transition: ease-in-out color 0.15s;
 }
 
-.site-header a:hover {
+.site-header a:hover,
+.site-header button:hover {
   color: #fd7e14;
   text-decoration: none;
 }
