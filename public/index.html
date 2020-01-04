@@ -16,6 +16,7 @@
             -ms-user-select: none;
             user-select: none;
         }
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -48,51 +49,12 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <!-- <script src="js/index.js"></script> -->
-
+    <script src="index.js"></script>
 </head>
 
 <body>
 
-    <!-- <div class="header"></div> -->
-
-    <div>
-        <ul class="site-header sticky-top py-1 nav nav-tabs">
-            <div class="container d-flex flex-column flex-md-row justify-content-between">
-                <li class="nav-item">
-                    <a class="py-2" href="index.html" aria-label="Product">
-                        <img id="logo" src="images/carrito.png" alt="carrito" height="40" width="40">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">Categorías</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Hombre</a>
-                        <a class="dropdown-item" href="#">Mujer</a>
-                        <a class="dropdown-item" href="#">Niños</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="py-2 d-none d-md-inline-block" href="#">TOP Ventas</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">Accesos</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item logueado" href="login.html">Iniciar sesión</a>
-                        <a class="dropdown-item logueado" href="register.html">Registrarse</a>
-                        <!-- TODO: Mostrar al iniciar sesión, ocultar al cerrar -->
-                        <a class="dropdown-item" href="userPanel.html">Panel de usuario</a>
-                        <button id="logOutButton" class="dropdown-item">Cerrar sesión</button>
-                    </div>
-                </li>
-            </div>
-        </ul>
-    </div>
+    <div class="site-header"></div>
 
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
         <div class="col-md-5 p-lg-5 mx-auto my-5">
@@ -204,9 +166,6 @@
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
 
     <!-- Initialize Firebase -->
-    <!-- <script src="/__/firebase/init.js"></script> -->
-
-    <!-- /FIREBASE -->
 
     <script>
         //Inicializar Firebase
@@ -224,8 +183,10 @@
         firebase.initializeApp(firebaseConfig);
         // const analytics = firebase.analytics();
     </script>
-
     <!-- <script src="js/web_analytics.js"></script> -->
+
+    <!-- /FIREBASE -->
+
     <!-- <script>
       document.addEventListener('DOMContentLoaded', function() {
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
@@ -251,38 +212,7 @@
 </body>
 
 <footer class="py-4">
-    <div class="row mr-4">
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-2">
-            <img id="logo" src="images/carrito.png" alt="carrito" height="30" width="30">
-            <small class="d-block mb-3 text-white">&copy; 2019-2020</small>
-        </div>
-        <div class="col-md-3">
-            <h5>Categorías</h5>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-white" href="#">Hombre</a></li>
-                <li><a class="text-white" href="#">Mujer</a></li>
-                <li><a class="text-white" href="#">Niños</a></li>
-                <li><a class="text-white" href="#">TOP Ventas</a></li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <h5>Contacto</h5>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-white" href="contacto.html">Contacto</a></li>
-                <li><a class="text-white" href="devoluciones.html">Devoluciones</a></li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <h5>Quiénes somos</h5>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-white" href="equipo.html">Equipo</a></li>
-                <li><a class="text-white" href="privacidad.html">Privacidad</a></li>
-                <li><a class="text-white" href="condicionesCompra.html">Condiciones de compra</a></li>
-            </ul>
-        </div>
-    </div>
+    <div class="site-footer"></div>
 </footer>
 
 </html>
