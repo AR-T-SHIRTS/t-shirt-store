@@ -1,0 +1,34 @@
+Using version ^4.38 for kreait/firebase-php
+./composer.json has been created
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - Installation request for kreait/firebase-php ^4.38 -> satisfiable by kreait/firebase-php[4.38.0].
+    - kreait/firebase-php 4.38.0 requires ext-mbstring * -> the requested PHP extension mbstring is missing from your system.
+
+  To enable extensions, verify that they are enabled in your .ini files:
+    - /etc/php/7.2/cli/php.ini
+    - /etc/php/7.2/cli/conf.d/10-opcache.ini
+    - /etc/php/7.2/cli/conf.d/10-pdo.ini
+    - /etc/php/7.2/cli/conf.d/20-calendar.ini
+    - /etc/php/7.2/cli/conf.d/20-ctype.ini
+    - /etc/php/7.2/cli/conf.d/20-exif.ini
+    - /etc/php/7.2/cli/conf.d/20-fileinfo.ini
+    - /etc/php/7.2/cli/conf.d/20-ftp.ini
+    - /etc/php/7.2/cli/conf.d/20-gettext.ini
+    - /etc/php/7.2/cli/conf.d/20-iconv.ini
+    - /etc/php/7.2/cli/conf.d/20-json.ini
+    - /etc/php/7.2/cli/conf.d/20-phar.ini
+    - /etc/php/7.2/cli/conf.d/20-posix.ini
+    - /etc/php/7.2/cli/conf.d/20-readline.ini
+    - /etc/php/7.2/cli/conf.d/20-shmop.ini
+    - /etc/php/7.2/cli/conf.d/20-sockets.ini
+    - /etc/php/7.2/cli/conf.d/20-sysvmsg.ini
+    - /etc/php/7.2/cli/conf.d/20-sysvsem.ini
+    - /etc/php/7.2/cli/conf.d/20-sysvshm.ini
+    - /etc/php/7.2/cli/conf.d/20-tokenizer.ini
+  You can also run `php --ini` inside terminal to see which files are used by PHP in CLI mode.
+
+Installation failed, deleting ./composer.json.

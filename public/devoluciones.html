@@ -55,46 +55,46 @@
 
     <!-- Custom styles for this template -->
     <link href="css/basics.css" rel="stylesheet">
-
 </head>
 
 <body>
-    <ul class="site-header sticky-top py-1 nav nav-tabs">
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <li class="nav-item">
-                <a class="py-2" href="index.html" aria-label="Product">
-                    <img id="logo" src="images/carrito.png" alt="carrito" height="40" width="40">
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">Categorías</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Hombre</a>
-                    <a class="dropdown-item" href="#">Mujer</a>
-                    <a class="dropdown-item" href="#">Niños</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="py-2 d-none d-md-inline-block" href="#">TOP Ventas</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">Accesos</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="login.html">Iniciar sesión</a>
-                    <a class="dropdown-item" href="register.html">Registrarse</a>
-                    <!-- TODO: Mostrar al iniciar sesión, ocultar al cerrar -->
-                    <a class="dropdown-item" href="userPanel.html">Panel de usuario</a>
-                    <button id="logOutButton" class="dropdown-item">Cerrar sesión</button>
-                </div>
-            </li>
-        </div>
-    </ul>
-
+    <div>
+        <ul class="site-header sticky-top py-1 nav nav-tabs">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <li class="nav-item">
+                    <a class="py-2" href="index.html" aria-label="Product">
+                        <img id="logo" src="images/carrito.png" alt="carrito" height="40" width="40">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Categorías</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Hombre</a>
+                        <a class="dropdown-item" href="#">Mujer</a>
+                        <a class="dropdown-item" href="#">Niños</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="py-2 d-none d-md-inline-block" href="#">TOP Ventas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Accesos</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item logueado" href="login.html">Iniciar sesión</a>
+                        <a class="dropdown-item logueado" href="register.html">Registrarse</a>
+                        <!-- TODO: Mostrar al iniciar sesión, ocultar al cerrar -->
+                        <a class="dropdown-item" href="userPanel.html">Panel de usuario</a>
+                        <button id="logOutButton" class="dropdown-item">Cerrar sesión</button>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
     <div class="container">
         <div class="py-5 text-center">
             <img class="mb-4" src="images/carrito.png" alt="" width="72" height="72">
