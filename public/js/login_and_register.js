@@ -11,6 +11,7 @@ firebase.auth().onAuthStateChanged(function (user) {
         // var uid = user.uid;
         // var providerData = user.providerData;
         // ...
+        $('.logueado').addClass("oculto");
     } else {
         // User is signed out.
         // ...
@@ -33,8 +34,7 @@ function login() {
         // ...
     });
 
-    window.alert("HOLI");
-
+    window.location.replace('https://ar-store-9b1bd.web.app/');
 }
 
 function register() {
@@ -49,6 +49,7 @@ function register() {
 
         window.alert("Error: " + errorMessage);
         // ...
-    }); email - password.html
+    });
 
+    window.location.replace('https://ar-store-9b1bd.web.app/userPanel.html');
 }
