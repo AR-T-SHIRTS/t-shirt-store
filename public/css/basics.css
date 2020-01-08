@@ -14,6 +14,7 @@
   background-color: #1d1c1b;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
+  justify-content: space-between;
 }
 
 .site-header a,
@@ -30,6 +31,17 @@
 
 .site-header .nav-item .dropdown-menu {
   background-color: #1d1c1b;
+}
+
+/* Menu hamburguesa */
+
+.navbar-toggler {
+  background-color: #1d1d1d;
+  border-color: #fd7e14;
+}
+
+.navbar-toggler-icon {
+  color: white;
 }
 
 /* Color de los desplegables del header */
