@@ -1,4 +1,4 @@
-firebase.auth().onAuthStateChanged(function (user) {
+firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         // document.getElementById("loggedOut").style.display = "block";
         // document.getElementById("loggedIn").style.display = "none";
@@ -25,7 +25,7 @@ function login() {
     var inputEmail = document.getElementById('inputEmail').value;
     var inputPassword = document.getElementById('inputPassword').value;
 
-    firebase.auth().signInWithEmailAndPassword(inputEmail, inputPassword).catch(function (error) {
+    firebase.auth().signInWithEmailAndPassword(inputEmail, inputPassword).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
@@ -41,8 +41,9 @@ function register() {
 
     var inputEmail = document.getElementById('inputEmail').value;
     var inputPassword = document.getElementById('inputPassword').value;
+    console.log(firebase.auth().currentUser.uid);
 
-    firebase.auth().createUserWithEmailAndPassword(inputEmail, inputPassword).catch(function (error) {
+    firebase.auth().createUserWithEmailAndPassword(inputEmail, inputPassword).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
@@ -50,6 +51,7 @@ function register() {
         window.alert("Error: " + errorMessage);
         // ...
     });
+
 
     window.location.replace('https://ar-store-9b1bd.web.app/userPanel.html');
 }

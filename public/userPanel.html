@@ -17,7 +17,7 @@
             -ms-user-select: none;
             user-select: none;
         }
-
+        
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -29,25 +29,18 @@
     <link rel="apple-touch-icon" href="images/carrito.ico" sizes="180x180">
     <link rel="icon" href="images/carrito.ico" type="image/png">
     <link rel="icon" href="images/carrito.ico" sizes="16x16" type="image/png">
-    <link rel="shortcut icon" href="images/carrito.ico" >
+    <link rel="shortcut icon" href="images/carrito.ico">
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
     <!-- Custom styles for this template -->
@@ -68,8 +61,7 @@
                     <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">Categorías</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorías</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Hombre</a>
                         <a class="dropdown-item" href="#">Mujer</a>
@@ -80,8 +72,7 @@
                     <a class="py-2 d-none d-md-inline-block" href="#">TOP Ventas</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">Accesos</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Accesos</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item logueado" href="login.html">Iniciar sesión</a>
                         <a class="dropdown-item logueado" href="register.html">Registrarse</a>
@@ -107,16 +98,14 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName">Nombre</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Nombre" value=""
-                                required>
+                            <input type="text" class="form-control" id="firstName" placeholder="Nombre" value="" required>
                             <div class="invalid-feedback">
                                 Se requiere un nombre.
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="lastName">Apellidos</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="Apellidos" value=""
-                                required>
+                            <input type="text" class="form-control" id="lastName" placeholder="Apellidos" value="" required>
                             <div class="invalid-feedback">
                                 Se requiere un apellido.
                             </div>
@@ -125,7 +114,7 @@
 
                     <div class="mb-3">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="tu@ejemplo.com" required>
+                        <input type="email" class="form-control" id="email" placeholder="tu@ejemplo.com" value="" required>
                         <div class="invalid-feedback">
                             Por favor, introduzca una dirección de correo válida.
                         </div>
@@ -141,8 +130,7 @@
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <label for="passwd">Repita la contraseña</label>
-                            <input type="password" class="form-control" id="rep_passwd" placeholder="Contraseña"
-                                required>
+                            <input type="password" class="form-control" id="rep_passwd" placeholder="Contraseña" required>
                             <div class="invalid-feedback">
                                 Por favor, introduzca una contraseña.
                             </div>
@@ -171,22 +159,22 @@
                         </div>
                         <div class="col-md-1 col-sm-4 mb-2 ">
                             <label for="number ">Número</label>
-                            <input type="text " class="form-control " id="number " placeholder=" ">
+                            <input type="text " class="form-control " id="number" placeholder=" ">
                         </div>
                         <div class="col-md-1 col-sm-4 mb-2 ">
                             <label for="floor ">Piso</label>
-                            <input type="text " class="form-control " id="floor " placeholder=" ">
+                            <input type="text " class="form-control " id="floor" placeholder=" ">
                         </div>
                         <div class="col-md-1 col-sm-4 mb-2 ">
                             <label for="letter ">Letra</label>
-                            <input type="text " class="form-control " id="letter " placeholder=" ">
+                            <input type="text " class="form-control " id="letter" placeholder=" ">
                         </div>
                     </div>
 
                     <div class="row ">
                         <div class="col-md-5 col-sm-4 mb-3">
                             <label for="country ">Provincia</label>
-                            <select class="custom-select d-block w-100 " id="country " required>
+                            <select class="custom-select d-block w-100 " id="country" required>
                                 <option value="">Elige...</option>
                                 <option>Álava</option>
                                 <option>Albacete</option>
@@ -204,7 +192,7 @@
                         </div>
                         <div class="col-md-4 col-sm-4 mb-3 ">
                             <label for="state ">Localidad</label>
-                            <select class="custom-select d-block w-100 " id="state ">
+                            <select class="custom-select d-block w-100 " id="state">
                                 <option value="">Elige...</option>
                                 <!-- Si se selecciona una provincia, 
                                     deberían aparecer sus respectivas comunidades autónomas 
@@ -216,7 +204,7 @@
                         </div>
                         <div class="col-md-3 col-sm-4 mb-3 ">
                             <label for="zip ">Código Postal</label>
-                            <input type="text " class="form-control " id="zip " placeholder="38001" required>
+                            <input type="text " class="form-control " id="zip" placeholder="38001" required>
                             <div class="invalid-feedback ">
                                 Se requiere el código postal.
                             </div>
@@ -228,8 +216,7 @@
 
                     <div class="d-block my-3">
                         <div class="custom-control custom-radio">
-                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked
-                                required>
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
                             <label class="custom-control-label" for="credit">Tarjeta de crédito</label>
                         </div>
                         <div class="custom-control custom-radio">
@@ -253,8 +240,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="cc-number">Número de tarjeta</label>
-                            <input type="text" class="form-control" id="cc-number" placeholder="1234 5678 9876 5432"
-                                required>
+                            <input type="text" class="form-control" id="cc-number" placeholder="1234 5678 9876 5432" required>
                             <div class="invalid-feedback ">
                                 El número de la tarjeta es necesario.
                             </div>
@@ -284,37 +270,51 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
-        crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
     <script>
         window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js "><\/script>')
     </script>
-    <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js "
-        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm "
-        crossorigin="anonymous "></script>
+    <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js " integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm " crossorigin="anonymous "></script>
     <script src="js/form-validation.js "></script>
-    <script> 
-    function actualizarUsuario() {
-        alert("hola");
-        /**
-         *  var nombre = documentGetElementById('nombre').value;
-         * 
-         * */
-        db = firebase.firestore();
-        // Add a new document in collection "cities"db.collection("usuarios").doc(firebase.auth().currentUser.uid).set({
-        db.collection("usuarios").doc("Kg7nLJ2a3JZWqs2iWmIZ").set({    
-            name: "Los Angeles",
-            id: "1"
-        })
-        .then(function() {
-            console.log("Document successfully written!");
-        })
-        .catch(function(error) {
-            console.error("Error writing document: ", error);
-        });
-    }
+
+    <!-- FIREBASE -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <!-- <script src="/__/firebase/7.5.2/firebase-analytics.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+    <!-- Initialize Firebase -->
+
+    <script>
+        //Inicializar Firebase
+        var firebaseConfig = {
+            apiKey: "AIzaSyADN2WrTeyMRGzNfZX5RjCZTuwaaGAoWd8",
+            authDomain: "ar-store-9b1bd.firebaseapp.com",
+            databaseURL: "https://ar-store-9b1bd.firebaseio.com",
+            projectId: "ar-store-9b1bd",
+            storageBucket: "ar-store-9b1bd.appspot.com",
+            messagingSenderId: "164551784368",
+            appId: "1:164551784368:web:4d93fa972aaf3d1bd54875",
+            measurementId: "G-3LR9106SGK"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+        const db = firebase.firestore();
+
+        // const analytics = firebase.analytics();
     </script>
+    <!-- <script src="js/web_analytics.js"></script> -->
+
+    <!-- /FIREBASE -->
+    <script src="js/login_and_register.js"></script>
+    <script src="js/funciones.js"></script>
 </body>
 <footer class="py-4">
     <div class="row mr-4">
