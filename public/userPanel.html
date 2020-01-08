@@ -26,10 +26,10 @@
     </style>
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="images/carrito.png" sizes="180x180">
-    <link rel="icon" href="images/carrito.png" type="image/png">
-    <link rel="icon" href="images/carrito.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="images/carrito.png">
+    <link rel="apple-touch-icon" href="images/carrito.ico" sizes="180x180">
+    <link rel="icon" href="images/carrito.ico" type="image/png">
+    <link rel="icon" href="images/carrito.ico" sizes="16x16" type="image/png">
+    <link rel="shortcut icon" href="images/carrito.ico" >
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -40,6 +40,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -202,7 +204,7 @@
                         </div>
                         <div class="col-md-4 col-sm-4 mb-3 ">
                             <label for="state ">Localidad</label>
-                            <select class="custom-select d-block w-100 " id="state " required>
+                            <select class="custom-select d-block w-100 " id="state ">
                                 <option value="">Elige...</option>
                                 <!-- Si se selecciona una provincia, 
                                     deberían aparecer sus respectivas comunidades autónomas 
@@ -275,7 +277,8 @@
                         </div>
                     </div>
                     <hr class="mb-4">
-                    <button class="btn btn-lg btn-save btn-block" type="submit">Guardar</button>
+                    <button class="btn btn-lg btn-save btn-block" type="submit" onclick="actualizarUsuario()">Guardar</button>
+                    <button class="btn btn-lg btn-save btn-block" onclick="actualizarUsuario()">Guardar</button>
                     <br>
                 </form>
             </div>
@@ -291,6 +294,27 @@
         integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm "
         crossorigin="anonymous "></script>
     <script src="js/form-validation.js "></script>
+    <script> 
+    function actualizarUsuario() {
+        alert("hola");
+        /**
+         *  var nombre = documentGetElementById('nombre').value;
+         * 
+         * */
+        db = firebase.firestore();
+        // Add a new document in collection "cities"db.collection("usuarios").doc(firebase.auth().currentUser.uid).set({
+        db.collection("usuarios").doc("Kg7nLJ2a3JZWqs2iWmIZ").set({    
+            name: "Los Angeles",
+            id: "1"
+        })
+        .then(function() {
+            console.log("Document successfully written!");
+        })
+        .catch(function(error) {
+            console.error("Error writing document: ", error);
+        });
+    }
+    </script>
 </body>
 <footer class="py-4">
     <div class="row mr-4">
