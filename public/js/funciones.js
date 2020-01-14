@@ -28,8 +28,11 @@ function actualizarUsuario() {
 
     var dir = via + direccion + num + piso + letra;
 
+    var user = firebase.auth().currentUser;
+
+    var uid =  user.uid;
     // Add a new document. in collection "cities"db.collection("usuarios").doc(firebase.auth().currentUser.uid).set({
-    db.collection("usuarios").doc(firebase.auth().currentUser.uid).set({
+    db.collection("usuarios").doc(uid).set({
             name: nombre,
             surname: apellido,
             email: email,
