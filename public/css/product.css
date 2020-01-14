@@ -7,8 +7,6 @@
   color: #1d1c1b;
 }
 
-/*probando*/
-
 .zoom {
   /* Aumentamos la anchura y altura durante 2 segundos */
   transition: width 2s, height 2s, transform 2s;
@@ -55,13 +53,14 @@
  * Dummy devices (replace them with your own or something else entirely!)
  */
 
-/* .product-device {
+
+.product-device {
   position: absolute;
   right: 10%;
   bottom: -30%;
   width: 300px;
   height: 540px;
-  background-color: #333;
+  background-color: #1d1d1d;
   border-radius: 21px;
   -webkit-transform: rotate(30deg);
   transform: rotate(30deg);
@@ -83,8 +82,8 @@
   right: auto;
   bottom: 0;
   left: 5%;
-  background-color: #e5e5e5;
-} */
+  background-color: #fd7e14;
+}
 
 /*
  * Extra utilities

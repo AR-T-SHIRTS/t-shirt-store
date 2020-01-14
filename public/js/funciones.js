@@ -53,3 +53,78 @@ function actualizarUsuario() {
             console.error("Error writing document.: ", error);
         });
 }
+
+
+/**
+* Llamada JSON provincias
+**/
+
+//function getProvincias() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.open('GET', 'https://raw.githubusercontent.com/IagoLast/pselect/master/data/provincias.json', true);
+  xhttp.send();
+  xhttp.onreadystatechange = function() {
+
+    if(this.readyState == 4 && this.status == 200) {
+
+      //console.log(this.responseText);
+      let datos = JSON.parse(this.responseText);
+      let res = document.getElementById('country');
+      res.innerHTML = '<option value="">Elige...</option>';
+      for (let item of datos) {
+        //console.log(item.nm);
+        res.innerHTML += `<option value="${item.id}" class="provincias">${item.nm}</option>`;
+      }
+    }
+  }
+
+var select = document.getElementById('country');
+select.addEventListener('change',
+  function(){
+    var selectedOption = this.options[select.selectedIndex];
+    getLocalidades(selectedOption.value);
+    //console.log(selectedOption.value + ': ' + selectedOption.text);
+  });
+
+function getLocalidades(idProvincia) {
+  const xhttp2 = new XMLHttpRequest();
+  xhttp2.open('GET', 'https://raw.githubusercontent.com/IagoLast/pselect/master/data/municipios.json', true);
+  xhttp2.send();
+  xhttp2.onreadystatechange = function() {
+
+    if(this.readyState == 4 && this.status == 200) {
+
+      //console.log(this.responseText);
+      let datos = JSON.parse(this.responseText);
+      let res = document.getElementById('state');
+      res.innerHTML = '';
+      for (let item of datos) {
+        console.log(item.nm);
+        if(item.id.substr(0,2) == idProvincia.substr(0,2)) {
+          res.innerHTML += `<option class="localidades" value="${item.id}">${item.nm}</option>`;
+        }
+      }
+    }
+  }
+}
+
+//}
+
+/**
+  Ejemplo llamada API STWOR
+*/
+/*
+  const API_URL = 'https://swapi.co/api/';
+  const PEOPLE_URL = 'people/:id';
+
+  const onResponse = ({name}) => {
+     console.log(`Hola, mi nombre es ${name}`);
+  }
+  const opts = {
+    crossDomain:true
+  }
+  var URL, personaje, respuesta;
+  URL = `${API_URL}${PEOPLE_URL.replace(':id', 1)}`;
+  $.get(URL, opts, onResponse);
+
+  */
