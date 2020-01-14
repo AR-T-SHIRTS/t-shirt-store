@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Página destinada a devoluciones de compra por parte de los clientes.">
+    <meta name="author" content="Bárbara V. García, Damián E. Domínguez, David M. Ramallo">
+    <title>Devoluciones</title>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .col-md-12.order-md-1 h2,
+        span {
+            color: #fd7e14;
+        }
+    </style>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="images/carrito.png" sizes="180x180">
+    <link rel="icon" href="images/carrito.png" type="image/png">
+    <link rel="icon" href="images/carrito.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/carrito.png">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/basics.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <ul class="site-header sticky-top py-1 nav nav-tabs">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <li class="nav-item">
+                    <a class="py-2" href="index.html" aria-label="Product">
+                        <img id="logo" src="images/carrito.png" alt="carrito" height="40" width="40">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Categorías</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Hombre</a>
+                        <a class="dropdown-item" href="#">Mujer</a>
+                        <a class="dropdown-item" href="#">Niños</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="py-2 d-none d-md-inline-block" href="#">TOP Ventas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Accesos</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item logueado" href="login.html">Iniciar sesión</a>
+                        <a class="dropdown-item logueado" href="register.html">Registrarse</a>
+                        <!-- TODO: Mostrar al iniciar sesión, ocultar al cerrar -->
+                        <a class="dropdown-item" href="userPanel.html">Panel de usuario</a>
+                        <button id="logOutButton" class="dropdown-item">Cerrar sesión</button>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="mb-4" src="images/carrito.png" alt="" width="72" height="72">
+            <h2>¿No era lo que esperabas?</h2>
+            <p class="lead">Sigue estos pasos para la devolución del producto.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-md-12 order-md-1">
+            <hr class="mb-4">
+            <div class="row py-3">
+                <div class="col md-12">
+                    <p><strong>Contacta con nosotros.</strong></p>
+                    <ul class="to-left">
+                        <li class="mb-1">
+                            <span><b>1.1</b></span>
+                            <p class="text-justify">
+                                Indícanos el nº de pedido y el motivo de la devolución.
+                            </p>
+                        </li>
+                        <li class="mb-1">
+                            <span><b>1.2</b></span>
+                            <p class="text-justify">
+                                Especifica si enviamos a una empresa a por el pedido o nos lo envía por tus medios.
+                            </p>
+                        </li>
+                        <li class="mb-1">
+                            <span><b>1.3</b></span>
+                            <p class="text-justify">
+                                Haz clic en Enviar.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col md-12">
+                    <p><strong>Prepara el paquete.</strong></p>
+                    <ul class="to-left">
+                        <li class="mb-1">
+                            <span><b>2.1</b></span>
+                            <p class="text-justify">
+                                Guarda el producto completo en una caja resistente o en la que recibiste el pedido.
+                            </p>
+                        </li>
+                        <li class="mb-1">
+                            <span><b>2.2</b></span>
+                            <p class="text-justify">
+                                Imprime la etiqueta que te habremos enviado por email.
+                            </p>
+                        </li>
+                        <li class="mb-1">
+                            <span><b>2.3</b></span>
+                            <p class="text-justify">
+                                Pega la etiqueta en el exterior de la caja y ciérrala con precinto.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col md-12">
+                    <p><strong>Envía el paquete.</strong></p>
+                    <ul class="to-left">
+                        <li class="mb-1">
+                            <span><b>3.1</b></span>
+                            <p class="text-justify">
+                                Si solicitaste la recogida, la empresa pasará a recogerlo en la fecha que indicaste.
+                            </p>
+                        </li>
+                        <li class="mb-1">
+                            <span><b>3.2</b></span>
+                            <p class="text-justify">
+                                Si lo envías por tus medios, esperaremos su llegada.
+                            </p>
+                        </li>
+                </div>
+                <div class="col md-12">
+                    <p><strong>Recibe el reembolso.</strong></p>
+                    <ul class="to-left">
+                        <li class="mb-1">
+                            <span><b>4.1</b></span>
+                            <p class="text-justify">
+                                Si el producto no te gustaba o estaba en mal estado, al llegar el paquete te
+                                devolveremos
+                                el dinero que pagaste.
+                            </p>
+                        </li>
+                </div>
+            </div>
+
+            <h2>Casos en los que devolver un producto</h2>
+            <p class="text-justify">
+                Existen varios supuestos en los que un usuario puede ejercer su derecho a devolver un producto.
+                El primero de ellos es porque esté defectuoso, en cuyo caso se aplicaría la política de garantías
+                de AR Shop.
+                El segundo de ellos es que la talla elegida no sea la adecuada. Asimismo, la legislación española recoge
+                un periodo de prueba de 14 días en los que el usuario puede devolver un producto por no satisfacer sus
+                expectativas.
+            </p>
+            <hr class="mb-4">
+        </div>
+    </div>
+
+</body>
+<footer class="py-4">
+    <div class="row mr-4">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-2">
+            <img id="logo" src="images/carrito.png" alt="carrito" height="30" width="30">
+            <small class="d-block mb-3 text-white">&copy; 2019-2020</small>
+        </div>
+        <div class="col-md-3">
+            <h5>Categorías</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-white" href="#">Hombre</a></li>
+                <li><a class="text-white" href="#">Mujer</a></li>
+                <li><a class="text-white" href="#">Niños</a></li>
+                <li><a class="text-white" href="#">TOP Ventas</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h5>Contacto</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-white" href="contacto.html">Contacto</a></li>
+                <li><a class="text-white" href="devoluciones.html">Devoluciones</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h5>Quiénes somos</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-white" href="equipo.html">Equipo</a></li>
+                <li><a class="text-white" href="privacidad.html">Privacidad</a></li>
+                <li><a class="text-white" href="condicionesCompra.html">Condiciones de compra</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>

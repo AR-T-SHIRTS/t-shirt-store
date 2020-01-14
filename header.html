@@ -1,0 +1,72 @@
+<head>
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="images/carrito.png" sizes="180x180">
+    <link rel="icon" href="images/carrito.png" type="image/png">
+    <link rel="icon" href="images/carrito.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/carrito.png">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/basics.css" rel="stylesheet">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md site-header sticky-top py-1 nav-tabs navbar-dark">
+        <a class="navbar-brand py-2" href="index.html" aria-label="Product"><img id="logo" src="images/carrito.png" alt="carrito" height="40" width="40"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbars">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item">
+                    <a class="nav-link py-2 text-white" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorías</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="categoriaHombre.html">Hombre</a>
+                        <a class="dropdown-item" href="categoriaMujer.html">Mujer</a>
+                        <a class="dropdown-item" href="categoriaNino.html">Niños</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-2 text-white" href="topventas.html">TOP Ventas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Accesos</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item logueado" href="login.html">Iniciar sesión</a>
+                        <a class="dropdown-item logueado" href="register.html">Registrarse</a>
+                        <a class="dropdown-item" href="userPanel.html">Panel de usuario</a>
+                        <button id="logOutButton" class="dropdown-item">Cerrar sesión</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
